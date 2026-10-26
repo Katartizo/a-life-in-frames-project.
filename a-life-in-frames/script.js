@@ -144,8 +144,8 @@ $("#wishForm").addEventListener("submit", async event => {
     event.currentTarget.reset();
     $("#charCount").textContent = "0 / 700";
   } catch (error) {
-    console.error("Wish submission failed:", error.message);
-    setStatus("Sorry, your wish could not be submitted. Please try again.", true);
+  console.error("Wish submission failed:", error.message);
+  setStatus("Sorry, your wish could not be submitted. Please try again.", true);
   } finally {
     submitButton.disabled = false;
     submitButton.innerHTML = 'Send birthday wish <span>↗</span>';
